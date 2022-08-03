@@ -31,10 +31,18 @@ body {
   background: #4fc3dc;
   margin: 0 4px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px 4fc3dc, 0 0 100px 4fc3dc;
-          box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px 4fc3dc, 0 0 100px 4fc3dc;
+  -webkit-box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+          box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
   -webkit-animation: animate 15s linear infinite;
           animation: animate 15s linear infinite;
+  -webkit-animation-duration: calc(120s / var(--i));
+          animation-duration: calc(120s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  -webkit-box-shadow: 0 0 0 10px rgba(255, 45, 117, 0.2666666667), 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+          box-shadow: 0 0 0 10px rgba(255, 45, 117, 0.2666666667), 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+  background: #ff2d75;
 }
 
 @-webkit-keyframes animate {
